@@ -22,20 +22,17 @@ body{
 
 .weatherCard{
   margin:auto;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
+  text-align: center;
+  padding: 75px 150px;
   min-height: 25vh;
-  width: 50vw;
+  width: auto;
   box-shadow: 1px 1px 7px #666;
 
 
 
   background-color: $background-color-card;
   flex-direction: column;
-  h1{
-    font-family: 'Aclonica', sans-serif;
-  }
 
   p{
     font-family: 'Work Sans', sans-serif;
@@ -43,13 +40,20 @@ body{
     line-height: 1.1;
   }
 
-  #weather{
-    justify-content: center;
-    flex-direction: row;
+  .weatherInfo{
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-size: 160%;
 
     border-bottom: #000 solid;
     width:100%;
+  }
+
+  #convert{
+    margin:auto;
+    font-size: 80%;
+    color: $grey-700;
+
+    cursor: pointer;
   }
 }
